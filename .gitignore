@@ -1,0 +1,16 @@
+# Dependensi dan hasil deploy
+node_modules
+.vercel
+
+# Rahasia: jangan pernah di-commit
+.env
+.env.*
+!.env.example
+
+# Data pribadi (isi jurnal): CSV hasil ekspor spreadsheet, cadangan, dan file database
+*.csv
+*.sql
+*.db
+*.db-*
+data/*
+!data/.gitkeep

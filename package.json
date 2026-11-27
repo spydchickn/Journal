@@ -1,0 +1,25 @@
+{
+  "name": "jurnal-perjalanan-diri",
+  "version": "1.0.0",
+  "description": "Jurnal pribadi: Express + SQLite (libSQL/Turso)",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "import": "node scripts/import-csv.js",
+    "test": "node --test test/*.test.js",
+    "test:ui": "node test/ui.e2e.js"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "dotenv": "^18.0.10",
+    "express": "^4.22.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "jsdom": "^31.0.1"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Jurnal Perjalanan Diri</title>
+<!-- Font: pilih di fonts.google.com, salin kode embed ke sini, lalu samakan nama font di --fh dan --fb pada style.css -->
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<section id="lock" class="lock hidden">
+  <h1>Jurnal Perjalanan Diri</h1>
+  <p id="lockInfo"></p>
+  <input id="pin" type="password" inputmode="numeric" autocomplete="off" aria-label="PIN" placeholder="PIN">
+  <input id="pin2" class="hidden" type="password" inputmode="numeric" autocomplete="off" aria-label="Ulangi PIN" placeholder="Ulangi PIN">
+  <button class="p" id="btnOpen">Buka jurnal</button>
+  <div class="msg" id="lockMsg" role="alert"></div>
+</section>
+
+<div id="app" class="hidden">
+  <header class="bar"><div class="wrap">
+    <button class="icon hidden" id="back" aria-label="Kembali"></button>
+    <h1 id="ttl"></h1>
+    <button class="icon" id="btnLock" aria-label="Kunci jurnal"></button>
+  </div></header>
+  <main class="wrap" id="view"></main>
+  <button class="fab hidden" id="fab" aria-label="Tambah">+</button>
+  <nav class="nav" id="nav" aria-label="Menu utama"></nav>
+</div>
+
+<div id="sheetWrap" class="hidden"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle"><h2 id="sheetTitle"></h2><div id="sheetBody"></div></div></div>
+<div id="toast" class="toast hidden" role="status"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
